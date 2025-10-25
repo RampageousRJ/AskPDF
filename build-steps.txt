@@ -1,0 +1,11 @@
+STEPS TO BUILD RAG
+1. Setup basic streamlit app functionality using Streamlit.
+2. Include PDF read and display functionality using PyPDF2.
+3. Divide the text heavy PDF into chunks using Langchain.
+4. Now convert these chunks into embeddings using OpenAIEmbeddings.
+5. We use Facebook AI Similarity Search (FAISS) / ChromaDB for similarity vectors to finish our knowledge base document.  
+6. Ask user input for question based on PDF.
+7. Apply FAISS/Chroma search on the knowledge base for the user question.
+8. Specify LLM, template and create a retriever for knowledge base.
+9. Create a RAG chain for docs by providing context and LLM. 
+10. Print the response.
